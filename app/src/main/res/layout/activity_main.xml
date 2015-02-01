@@ -3,21 +3,19 @@
     android:layout_height="match_parent"
     android:background="#000"
     android:orientation="vertical" >
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="15"
         android:orientation="horizontal" >
-
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="4.5"
             android:orientation="vertical"
             android:layout_marginRight="5dp">
-
             <TextView
+                android:id="@+id/view1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -26,22 +24,21 @@
                 android:textSize="24sp"
                 android:layout_marginBottom="5dp"/>
             <TextView
+                android:id="@+id/view2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="#1a2000"
                 android:gravity="center_horizontal"
                 android:textSize="24sp" />
-
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="6"
             android:orientation="vertical" >
-
             <TextView
+                android:id="@+id/view3"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -50,6 +47,7 @@
                 android:textSize="24sp"
                 android:layout_marginBottom="5dp" />
             <TextView
+                android:id="@+id/view4"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -58,6 +56,7 @@
                 android:textSize="24sp"
                 android:layout_marginBottom="5dp" />
             <TextView
+                android:id="@+id/view5"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -66,17 +65,19 @@
                 android:textSize="24sp" />
 
         </LinearLayout>
-
-
-
     </LinearLayout>
-
-
-    <SeekBar
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:thumbTint="#9a0030"
-        android:progressTint="#ff2247ff"
-        android:thumbTintMode="src_over" />
+        android:orientation="horizontal" >
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:thumbTint="#9a0030"
+            android:progressTint="#ff2247ff"
+            android:thumbTintMode="src_over"
+            android:max="255" />
+    </LinearLayout>
 </LinearLayout>

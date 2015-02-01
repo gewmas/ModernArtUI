@@ -2,7 +2,9 @@
 <resources>
 
     <string name="app_name">Modern Art UI</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="menu_more_information">More Information</string>
 
+    <string name="dialog_message">Inspired by the works of artists such as Piet Mondrian and Ben Nicholson \n\nClick below to learn more!</string>
+    <string name="dialog_positive_button">Not Now</string>
+    <string name="dialog_negative_button">Visit MOMA</string>
 </resources>
